@@ -1,0 +1,70 @@
+body {
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .cover-img {
+      width: 100% !important;
+      height: 500px;
+  }
+  
+  .birthdaytitle {
+    text-shadow: 10px 10px 4px #000000;
+    font-size: 17px;
+    text-align: center !important;
+  }
+  
+  .text--dynamic {
+    position: relative;
+  }
+  
+  .text--dynamic::after {
+    content: "";
+    position: absolute;
+    margin-left: 5px;
+    width: 2px;
+    height: 100%;
+    animation: blink 300ms ease infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      background-color: transparent;
+    }
+  
+    50% {
+      background-color: green;
+    }
+  }
+
+  .birthdaytag {
+    width: 150px;
+    height: 100px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 6%;
+    left: -6%;
+}
+
+.classytitle {
+    color: black;
+    display: block;
+    text-align: center;
+    font-family: 'Playball', cursive;
+}
+
+div.polaroid {
+    max-width: 380px;
+    height: 380px;
+    display: block;
+    margin: 120px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  div.containerSection {
+    text-align: center;
+    padding: 10px 20px;
+  }
